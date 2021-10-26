@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="shortcut icon" href="tools-and-utensils.png" type="image/x-icon">
+</head>
+<body>
+        <!-- Cabeçalho com título e subtítulo do formulário -->
+        <header>
+            <h1>CADASTRE-SE</h1>
+            <p>Insira suas informações</p>
+        </header>
+
+        <!-- Parte principal do conteúdo do formulário dentro da tag form -->
+        <form>
+            <div class="campo"> <!-- campo para inserir o nome da pessoa -->
+                <label for="nome"><strong>Nome:</strong></label> <!-- mensagem que aparece na tela -->
+                <input type="text">
+            </div>
+
+            <div class="campo"> <!-- campo para inserir o email da pessoa -->
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email">
+            </div>
+
+            <div class="campo">
+                <label> <!-- campo para selecionar apenas uma opção -->
+                    <strong>Qual lado você pretende estudar?</strong><br><br>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Full Stack
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="devops">Dev Ops
+                </label>
+            </div>
+
+            <div class="campo">
+                <label>
+                    <strong>Qual é a sua senioridade?</strong><br><br>
+                    <select name="senioridade" id="senioridade">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Júnior</option>
+                        <option>Pleno</option>
+                        <option>Senior</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="campo">
+                <label id="check">
+                    <strong>Selecione as tecnologias que você já utiliza</strong><br><br>
+                    <input type="checkbox" id="tec1" value="HTML"><!---aqui-->
+                    <label for="tec1">HTML</label><!--- pq inserir essa linha e ñ deixar só a linha 'aqui'? -->
+                    <input type="checkbox" id="tec2" value="CSS">
+                    <label for="tec2">CSS</label>
+                    <input type="checkbox" id="tec3" value="JavaScript">
+                    <label for="tec3">Java Script</label>
+                    <input type="checkbox" id="tec4" value="PHP">
+                    <label for="tec4">PHP</label>
+                    <input type="checkbox" id="tec5" value="Python">
+                    <label for="tec5">Python</label>
+                </label>
+            </div>
+
+            <div class="campo"><br>
+                <label for="relato"><strong>Conte um pouco sobre o que acha da sua área escolhida:</strong></label>
+                <textarea name="relato" id="relato" cols="30" rows="10"></textarea>
+            </div>
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>
+        </form>
+<!-- nome, sobrenome, idade, email, qual lado de desenvolvimento, senioridade-->
+</body>
+</html>

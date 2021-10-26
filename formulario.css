@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+/* #D4EDFF; EBE9E9; 48E4E6*/
+
+header {
+    background-image: linear-gradient(to bottom, /*#BBAAB8, #292643*/ #38AECC, #183446);
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px ​1px 3px #000;
+    border: 2px solid /*#292643*/ #183446 ;
+    font-family: 'Playfair Display', serif;
+    margin: -10px -8px 28px -8px; /* ficar + proximo do topo e dos lados */
+    box-shadow: 2px 2px 13px #183446;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+header h1 {
+    font-size: 2.3em;
+}
+
+header p {
+    margin-top: -13px; /* ficar mais parto do h1 */
+    margin-bottom: 30px; /* enlarguecer a parte de baixo do p */
+    font-size: 1.3em;
+}
+
+body {
+    background-color: /* #f3e5f0*/ #ddf3fc;
+}
+
+form {
+    color: black;
+    background-color: #fff;
+    box-shadow: 2px 2px 13px #183446b4;
+    border-radius: 6px;
+    margin: auto;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: -18px;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+input {
+    background-color: #fff;
+}
+
+.campo {
+    padding: 10px 0px 10px 12px;
+}
+
+.botao:hover {
+    background-color: #DAF2FB;
+    transition-duration: 0.5s;
+}
+
+.botao {
+    margin: 20px 20px 20px 10px;
+}
+
+textarea {
+    width: 30em;
+    margin-top: 15px;
+}
+
+#check {
+    padding-right: 5px; /*n funciona */
+    padding-top: 5px;
+}
